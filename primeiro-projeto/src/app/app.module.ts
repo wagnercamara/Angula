@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { from } from 'rxjs';
 
 import { AppComponent } from './app.component';
-
+import { CarteiraAppComponent }from './carteira-app/carteira-app.component'
+import { CursosModule } from './cursos/cursos.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarteiraAppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CursosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
